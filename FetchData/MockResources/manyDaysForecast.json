@@ -1,0 +1,120 @@
+{
+  "Headline": {
+    "EffectiveDate": "2024-11-06T19:00:00+06:00",
+    "EffectiveEpochDate": 1730898000,
+    "Severity": 4,
+    "Text": "Thunderstorms Wednesday evening",
+    "Category": "thunderstorm",
+    "EndDate": "2024-11-07T01:00:00+06:00",
+    "EndEpochDate": 1730919600,
+    "MobileLink": "http://www.accuweather.com/en/bd/dhaka/28143/daily-weather-forecast/28143?lang=en-us",
+    "Link": "http://www.accuweather.com/en/bd/dhaka/28143/daily-weather-forecast/28143?lang=en-us"
+  },
+  "DailyForecasts": [
+    {
+      "Date": "2024-11-08T07:00:00+06:00",
+      "EpochDate": 1730854800,
+      "Temperature": {
+        "Minimum": {
+          "Value": 73,
+          "Unit": "F",
+          "UnitType": 18
+        },
+        "Maximum": {
+          "Value": 87,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "Day": {
+        "Icon": 16,
+        "IconPhrase": "Mostly cloudy w/ t-storms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate"
+      },
+      "Night": {
+        "Icon": 42,
+        "IconPhrase": "Mostly cloudy w/ t-storms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate"
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/bd/dhaka/28143/daily-weather-forecast/28143?day=1&lang=en-us",
+      "Link": "http://www.accuweather.com/en/bd/dhaka/28143/daily-weather-forecast/28143?day=1&lang=en-us"
+    },
+    {
+      "Date": "2024-11-07T07:00:00+06:00",
+      "EpochDate": 1730854800,
+      "Temperature": {
+        "Minimum": {
+          "Value": 73,
+          "Unit": "F",
+          "UnitType": 18
+        },
+        "Maximum": {
+          "Value": 87,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "Day": {
+        "Icon": 16,
+        "IconPhrase": "Mostly cloudy w/ t-storms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate"
+      },
+      "Night": {
+        "Icon": 42,
+        "IconPhrase": "Mostly cloudy w/ t-storms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate"
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/bd/dhaka/28143/daily-weather-forecast/28143?day=1&lang=en-us",
+      "Link": "http://www.accuweather.com/en/bd/dhaka/28143/daily-weather-forecast/28143?day=1&lang=en-us"
+    },
+    {
+      "Date": "2024-11-06T07:00:00+06:00",
+      "EpochDate": 1730854800,
+      "Temperature": {
+        "Minimum": {
+          "Value": 73,
+          "Unit": "F",
+          "UnitType": 18
+        },
+        "Maximum": {
+          "Value": 87,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "Day": {
+        "Icon": 16,
+        "IconPhrase": "Mostly cloudy w/ t-storms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate"
+      },
+      "Night": {
+        "Icon": 42,
+        "IconPhrase": "Mostly cloudy w/ t-storms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate"
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/bd/dhaka/28143/daily-weather-forecast/28143?day=1&lang=en-us",
+      "Link": "http://www.accuweather.com/en/bd/dhaka/28143/daily-weather-forecast/28143?day=1&lang=en-us"
+    }
+  ]
+}

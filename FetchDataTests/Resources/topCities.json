@@ -1,0 +1,124 @@
+[
+  {
+    "Version": 1,
+    "Key": "28143",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Dhaka",
+    "EnglishName": "Dhaka",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "ASI",
+      "LocalizedName": "Asia",
+      "EnglishName": "Asia"
+    },
+    "Country": {
+      "ID": "BD",
+      "LocalizedName": "Bangladesh",
+      "EnglishName": "Bangladesh"
+    },
+    "AdministrativeArea": {
+      "ID": "C",
+      "LocalizedName": "Dhaka",
+      "EnglishName": "Dhaka",
+      "Level": 1,
+      "LocalizedType": "Division",
+      "EnglishType": "Division",
+      "CountryID": "BD"
+    },
+    "TimeZone": {
+      "Code": "BDT",
+      "Name": "Asia/Dhaka",
+      "GmtOffset": 6,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": 23.71,
+      "Longitude": 90.407,
+      "Elevation": {
+        "Metric": {
+          "Value": 5,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 16,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "SupplementalAdminAreas": [],
+    "DataSets": [
+      "AirQualityCurrentConditions",
+      "AirQualityForecasts",
+      "FutureRadar",
+      "MinuteCast"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "113487",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Kinshasa",
+    "EnglishName": "Kinshasa",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "AFR",
+      "LocalizedName": "Africa",
+      "EnglishName": "Africa"
+    },
+    "Country": {
+      "ID": "CD",
+      "LocalizedName": "Democratic Republic of the Congo",
+      "EnglishName": "Democratic Republic of the Congo"
+    },
+    "AdministrativeArea": {
+      "ID": "KN",
+      "LocalizedName": "Kinshasa",
+      "EnglishName": "Kinshasa",
+      "Level": 1,
+      "LocalizedType": "City",
+      "EnglishType": "City",
+      "CountryID": "CD"
+    },
+    "TimeZone": {
+      "Code": "WAT",
+      "Name": "Africa/Kinshasa",
+      "GmtOffset": 1,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -4.316,
+      "Longitude": 15.298,
+      "Elevation": {
+        "Metric": {
+          "Value": 180,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 590,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "SupplementalAdminAreas": [],
+    "DataSets": [
+      "AirQualityCurrentConditions",
+      "AirQualityForecasts",
+      "Alerts",
+      "DailyPollenForecast",
+      "FutureRadar",
+      "MinuteCast",
+      "Radar",
+      "TidalForecast"
+    ]
+  }
+]
