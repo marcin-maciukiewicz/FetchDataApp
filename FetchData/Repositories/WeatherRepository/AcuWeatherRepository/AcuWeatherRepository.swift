@@ -5,7 +5,7 @@ struct AcuWeatherRepository: WeatherRepository {
     func getLocations() async throws -> [WeatherModel.Location] {
         let result: [AcuWeatherAPIModel.Location]
         do {
-            result = try await api.top50Cities()
+            result = try await api.topCities()
         } catch {
             throw WeatherServiceError.wrapped(error: error)
         }
@@ -18,7 +18,7 @@ struct AcuWeatherRepository: WeatherRepository {
     func getForecast(locationId: String) async throws -> WeatherModel.Forecast {
         let forecast: AcuWeatherAPIModel.Forecast
         do {
-            forecast = try await api.tenDayForecast(locationKey: locationId)
+            forecast = try await api.fetchForecast(locationKey: locationId)
         } catch {
             throw WeatherServiceError.wrapped(error: error)
         }

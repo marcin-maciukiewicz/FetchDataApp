@@ -43,8 +43,8 @@ extension DependencyContainer {
     private static func createMockService() -> WeatherService {
         let urlMap = [
             "/topcities/50": "topCities.json",
-            "daily/10day/28143": "oneDayForecast.json",
-            "daily/10day/113487": "manyDaysForecast.json"
+            "daily/1day/28143": "oneDayForecast.json",
+            "daily/1day/113487": "manyDaysForecast.json"
         ]
         
         let apiExecutor = MockNetworkProvider(urlMap: urlMap)
