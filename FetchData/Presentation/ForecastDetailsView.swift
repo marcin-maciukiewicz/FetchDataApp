@@ -19,14 +19,14 @@ extension ForecastDetailsView {
         }
         
         func loadForecast() async {
-                await set(isLoading: true)
-                switch await useCases.getForecast.execute(locationId: locationId) {
-                case let .success(forecast):
-                    await show(forecast: forecast)
-                case let .failure(error):
-                    await show(error: error)
-                }
-                await set(isLoading: false)
+            await set(isLoading: true)
+            switch await useCases.getForecast.execute(locationId: locationId) {
+            case let .success(forecast):
+                await show(forecast: forecast)
+            case let .failure(error):
+                await show(error: error)
+            }
+            await set(isLoading: false)
         }
         
         @MainActor
@@ -62,12 +62,16 @@ struct ForecastDetailsView: View {
             VStack {
                 if let headline = model.headline {
                     Text(headline)
+                        .font(.title2)
                 }
                 ForEach(model.forecasts, id: \.date) { data in
                     VStack {
                         Text(data.date, format: .dateTime.year().month().day())
+                            .bold()
                         if let headline = data.headline {
                             Text(headline)
+                                .bold()
+                            
                         }
                         Text("min temp: \(data.minimumTemperature)")
                         Text("max temp: \(data.maximumTemperature)")
@@ -83,7 +87,14 @@ struct ForecastDetailsView: View {
                     }
                 }
                 .redacted(reason: model.isLoading ? .placeholder : [])
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background {
+                    RoundedRectangle(cornerRadius: 5)
+                        .stroke(.gray, lineWidth: 1)
+                }
             }
+            .padding()
         }.task {
             await model.loadForecast()
         }.redacted(reason: model.isLoading ? .placeholder : [])
@@ -91,12 +102,11 @@ struct ForecastDetailsView: View {
 }
 
 #Preview("Data Loaded") {
-    NavigationStack {
-        ForecastDetailsView(model: ForecastDetailsView.ViewModel(locationId: "28143", useCases: DependencyContainer.mock().useCases))
-    }
+    let viewModel = ForecastDetailsView.ViewModel(locationId: "28143", useCases: DependencyContainer.mock().useCases)
+    return ForecastDetailsView(model: viewModel)
 }
 #Preview("Error") {
-    let viewModel = ForecastDetailsView.ViewModel(locationId: "28143", useCases: DependencyContainer.mock().useCases)
+    let viewModel = ForecastDetailsView.ViewModel(locationId: "non-existent", useCases: DependencyContainer.mock().useCases)
     viewModel.show(error: WeatherServiceError.general)
     return ForecastDetailsView(model: viewModel)
 }
